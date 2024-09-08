@@ -1,0 +1,16 @@
+name: "newflow"
+
+on:
+  pull_request:
+
+jobs:
+  recon-job:
+    permissions:
+      contents: 'write'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run commands
+        shell: bash
+        run: |
+          id
